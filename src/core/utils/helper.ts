@@ -2,11 +2,11 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 
-export const UUID = process.env.UUID || '5efabea4-f6d4-91fd-b8f0-17e004c89c60';
+export const UUID = process.env.UUID || '226f7413-7c21-4b0c-bed9-f811f4007cce';
 export const NEZHA_SERVER = process.env.NEZHA_SERVER || '';
 export const NEZHA_PORT = process.env.NEZHA_PORT || '';
 export const NEZHA_KEY = process.env.NEZHA_KEY || '';
-export const DOMAIN = process.env.DOMAIN || '1234.abc.com'; // Adjust default if needed
+export const DOMAIN = process.env.DOMAIN || 'nextjs-ws-two.vercel.app'; // Adjust default if needed
 export const AUTO_ACCESS = process.env.AUTO_ACCESS || 'true';
 export const WSPATH = process.env.WSPATH || 'sub';
 export const NAME = process.env.NAME || '';
