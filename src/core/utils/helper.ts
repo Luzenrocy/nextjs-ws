@@ -2,7 +2,7 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 
-export const UUID = process.env.UUID || '226f7413-7c21-4b0c-bed9-f811f4007cce';
+export const UUID = process.env.UUID || '226f7413-7c21-4b0c-bed9-f811f4007cde';
 export const NEZHA_SERVER = process.env.NEZHA_SERVER || '';
 export const NEZHA_PORT = process.env.NEZHA_PORT || '';
 export const NEZHA_KEY = process.env.NEZHA_KEY || '';
