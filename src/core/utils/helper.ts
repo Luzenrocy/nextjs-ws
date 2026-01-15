@@ -10,7 +10,7 @@ export const DOMAIN = process.env.DOMAIN || '1234.abc.com'; // Adjust default if
 export const AUTO_ACCESS = process.env.AUTO_ACCESS || 'true';
 export const WSPATH = process.env.WSPATH || 'sub';
 export const NAME = process.env.NAME || '';
-export const PORT = process.env.PORT || 7860;
+export const PORT = process.env.PORT || 3000;
 
 // Custom DNS Resolver from original script
 const DNS_SERVERS = ['8.8.4.4', '1.1.1.1'];
