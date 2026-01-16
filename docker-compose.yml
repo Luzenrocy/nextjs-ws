@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: nextjs-ws-app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      
+      # Core Configuration
+      - DOMAIN=${DOMAIN:-nextjs-ws-two.vercel.app} # Domain name, can be passed as a parameter
+      - UUID=${UUID:-226f7413-7c21-4b0c-bed9-f811f4067cde}
+      - WSPATH=${WSPATH:-sub}
+      
+      # Nezha Agent Configuration (Optional)
+      - NEZHA_SERVER=${NEZHA_SERVER}
+      - NEZHA_PORT=${NEZHA_PORT}
+      - NEZHA_KEY=${NEZHA_KEY}
+      
+      # Other Features
+      - AUTO_ACCESS=${AUTO_ACCESS:-true}
+      - NAME=${NAME}
